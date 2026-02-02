@@ -1,14 +1,30 @@
 {% render 'partials/head.liquid' %}
 
-<article>
-  <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
-  </header>
+<div class="hero"> 
+      <nav>
+        <ul> 
+            <li><a>Sociaal</a></li>
+            <li><a>Rationeel</a></li>
+            <li><a>gedediceert</a></li>
+            <li><a>kalm</a></li>
+            <li><a>hulpzaam</a></li>
+        </ul>
+      </nav>
+     <div class="detel">
+     <h1>Ik ben</h1>
+      <h1>{{ person.name }}</h1>
+         <p>Ik ben 18 jaar en studeer fdnd op het hva
+          <br>In mijn vrije tijd doe ik veel aan fitness training
+          <br>Mijn grootste doel nu is om zelfstandig en structueel te kunnen developen
+          <br>Ik help graag mensen waar ik kan en waar het nodig is 
+          <br>Daarnaast ben ik altijd opzoek naar verbetering
+         </p>
+     </div>
+     <div class="images">
+             <img src="public/—Pngtree—images blank purple shape vector_10354327.png" class="shape">
+             <img src="public/image01.png" class="Bronx">
+     </div>
 
-  <p>{{ person.name }}</p>
-
-  <footer></footer>
-</article>
+    </div>
 
 {% render 'partials/foot.liquid' %}
