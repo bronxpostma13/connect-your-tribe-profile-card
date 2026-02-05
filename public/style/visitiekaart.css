@@ -53,11 +53,11 @@ body {
 p{
   font-family: pixelParagraaf;
   max-width:50%;
-  font-size: clamp(1.5rem, 2.5vw, 4rem);
+  font-size: clamp(1.8rem, 2.5vw, 4rem);
   color:var(--white-color);
   text-decoration: none;
   font-weight: var(--font-weight-standard);
-  -webkit-text-stroke: 1px var(--black-color);
+ 
    transition: 0.2s;
 
   @media (min-width: 768px) {
