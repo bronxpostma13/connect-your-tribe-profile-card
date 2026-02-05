@@ -1,8 +1,15 @@
 {% render 'partials/head.liquid' %}
-<section id="title">
-<p>Dit is het visite kaartje van </p>
-<h1>Bronx Postma</h1>
-<a href="/overzicht"> Klik hier om het avontuur te beginnen </a>
-</section>
+
+<main class="container">
+ <p>Dit is het visite kaartje van</p>
+  <h1> {{ person.name }} </h1>
+  <a href="/overzicht" class="progress-link">
+   Klik hier om het avontuur te beginnen 
+  </a>
+
+</main>
+
+
+
 
 {% render 'partials/foot.liquid' %}
