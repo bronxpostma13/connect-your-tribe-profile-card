@@ -1,0 +1,103 @@
+.card {
+  background-color: transparent;
+
+  width: min(90vw, 28em);   /* responsive */
+  aspect-ratio: 28 / 24;    /* vervangt height */
+
+  perspective: 1000px;
+}
+
+/* inner */
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  background-color: #695DD880;
+  border: solid #c9b63e;
+
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+
+/*   box-shadow: 0 4px 8px rgba(0,0,0,.2); */
+  
+}
+
+/* flip */
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* beide kanten */
+.card-front,
+.card-back {
+  position: absolute;
+  inset: 0;               /* vervangt width + height */
+
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  backface-visibility: hidden;
+}
+
+/* tekst responsive */
+.card-front p {
+  font-family: var(--font-family-p);
+  color: var(--white-color);
+  font-size: clamp(1rem, 3vw, 1.6rem);
+  line-height: 1.4;
+}
+
+/* achterkant */
+.card-back {
+  transform: rotateY(180deg);
+}
+
+/* lijst */
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin:0;
+  padding:0;
+  list-style:none;
+  list-style-position: outside;
+}
+
+/* geen vaste widths meer */
+progress {
+  -webkit-appearance: none;
+  width:11.1em;
+   @media (min-width: 500px) {
+    width:22.2em;
+
+}
+  
+}
+
+::-webkit-progress-bar {
+  background-color: #C9B63E;
+  padding:.2em;
+  
+}
+
+::-webkit-progress-value {
+  display:block;
+  width:21.8em;
+  background-color: transparent;
+  
+/*  zorgt voor de vakjes in de bar  */
+  background-image:
+    repeating-linear-gradient(
+      90deg, 
+      #695DD8 0% 2em, 
+      transparent 0 2.2em
+    );
+  
+}

@@ -1,0 +1,43 @@
+		<!-- RECHTS KOLOM (FLIP CARD) -->
+		<section class="card">
+			<section class="card-inner">
+
+				<!-- VOORKANT -->
+				<section class="card-front">
+					<p>
+						{{ person.bio }}
+					</p>
+
+					
+				</section>
+
+				<!-- ACHTERKANT -->
+				<section class="card-back">
+					<ul>
+
+						<li>
+							<label>{{ person.custom.eigenschap1 }}</label>
+							<progress value="90" max="100"></progress>
+						</li>
+
+						<li>
+							<label>{{ person.custom.eigenschap2 }}</label>
+							<progress value="70" max="100"></progress>
+						</li>
+
+						<li>
+							<label>{{ person.custom.eigenschap3 }}</label>
+							<progress value="60" max="100"></progress>
+						</li>
+
+                        <li>
+							<label>{{ person.custom.eigenschap4 }}</label>
+							<progress value="50" max="100"></progress>
+						</li>
+
+					</ul>
+				</section>
+
+			</section>
+		</section>
+    </article>
