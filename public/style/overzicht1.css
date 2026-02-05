@@ -1,3 +1,4 @@
+
 @font-face {
   font-family:pixelHeading;
   src: url(/Fonts/GothicByte.ttf);
@@ -30,12 +31,11 @@
 
 }
 
-
 /* =============== BASIS (mobile first) =============== */
 body {
-  background: url(thumb-1920-1205979.png) center/cover no-repeat; 
+  background: url(3dcjfz5xxyw21.png) center/cover no-repeat;
   margin: 0;
-  font-family:Arial;
+  font-family: Arial, sans-serif;
 }
 
 /* container vult hele scherm */
@@ -50,26 +50,28 @@ body {
 }
 
 /* ---------- tekst responsive met clamp() ---------- */
-p{
+.back-btn{
+   position: fixed;
+  left: 1.5rem;
+  top: 2%;
+  text-decoration: none;
+ p{
   font-family: pixelParagraaf;
-  max-width:50%;
-  font-size: clamp(1.5rem, 2.5vw, 4rem);
+  /* max-width:50%; */
+  font-size: 4em;
   color:var(--white-color);
+
   text-decoration: none;
   font-weight: var(--font-weight-standard);
-  -webkit-text-stroke: 1px var(--black-color);
    transition: 0.2s;
-
-  @media (min-width: 768px) {
-    font-size: clamp( 2.2 rem, 8vw, 2.9rem);
-    -webkit-text-stroke: 0px;
 }
 }
-
-
- 
+.back-btn:hover{
+  transform: scale(1.2);
+    text-decoration: none;
+}
 h1 {
-  font-family: pixelHeading, Arial;
+  font-family: var(--font-family-h);
   font-size: var(--font-size-h);
   font-weight: var(--font-weight-heading);
   max-width: 95%;
@@ -77,7 +79,7 @@ h1 {
   -webkit-text-stroke: 1px var(--black-color);
 
   @media (min-width: 768px) {
-    font-size: clamp(4rem, 10vw, 7rem);
+    font-size: var(--font-size-clamp-H-media);
     transform: translate(0 0 0 0);
   }
 }
@@ -110,7 +112,7 @@ h1 {
 .forward-btn {
   position: fixed;
   right: 1.5rem;
-  top: 20%;
+  top: 7.2%;
 
   @media (min-width: 768px) {
     top: 50%;

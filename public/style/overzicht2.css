@@ -8,7 +8,6 @@
   src: url(/Fonts/Retrobyte.ttf);
 }
 
-
 :root{
 /* Kleuren */
     --white-color: hsl(0 0% 99%);
@@ -30,12 +29,11 @@
 
 }
 
-
 /* =============== BASIS (mobile first) =============== */
 body {
-  background: url(thumb-1920-1205979.png) center/cover no-repeat; 
+  background: url(wp3309021.jpg) center/cover no-repeat;
   margin: 0;
-  font-family:Arial;
+  font-family: Arial, sans-serif;
 }
 
 /* container vult hele scherm */
@@ -50,26 +48,29 @@ body {
 }
 
 /* ---------- tekst responsive met clamp() ---------- */
-p{
+ .back-btn{
+   position: fixed;
+  right: 1.5rem;
+  top: 2%;
+  text-decoration: none;
+ p{
   font-family: pixelParagraaf;
-  max-width:50%;
-  font-size: clamp(1.5rem, 2.5vw, 4rem);
+  /* max-width:50%; */
+  font-size: 4em;
   color:var(--white-color);
+
   text-decoration: none;
   font-weight: var(--font-weight-standard);
-  -webkit-text-stroke: 1px var(--black-color);
    transition: 0.2s;
-
-  @media (min-width: 768px) {
-    font-size: clamp( 2.2 rem, 8vw, 2.9rem);
-    -webkit-text-stroke: 0px;
 }
 }
+.back-btn:hover{
+  transform: scale(1.2);
+    text-decoration: none;
+}
 
-
- 
-h1 {
-  font-family: pixelHeading, Arial;
+  h1 {
+  font-family: var(--font-family-h);
   font-size: var(--font-size-h);
   font-weight: var(--font-weight-heading);
   max-width: 95%;
@@ -77,12 +78,13 @@ h1 {
   -webkit-text-stroke: 1px var(--black-color);
 
   @media (min-width: 768px) {
-    font-size: clamp(4rem, 10vw, 7rem);
+    font-size: var(--font-size-clamp-H-media);
     transform: translate(0 0 0 0);
   }
 }
 
 
+ 
  /* text decoratie en groote  */
 .progress-link {
   font-family: pixelParagraaf;
@@ -104,17 +106,16 @@ h1 {
   }
 }
 
-
 /* =============== SVG PIJL LINKS MIDDEN =============== */
  /* plaats van de button  */
 .forward-btn {
   position: fixed;
-  right: 1.5rem;
-  top: 20%;
+  left: 1.5rem;
+  top: 7.2%;
 
   @media (min-width: 768px) {
     top: 50%;
-
+    left: 1.5rem;
   }
 
 }
