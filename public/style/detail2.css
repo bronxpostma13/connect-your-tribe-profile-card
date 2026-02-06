@@ -36,6 +36,9 @@ body {
   background: url(wp3309021.jpg) center/cover no-repeat;
   margin: 0;
   font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 /* container vult hele scherm */
@@ -147,12 +150,6 @@ label{
 
 
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-}
 
 /* card wrapper */
 .card {
